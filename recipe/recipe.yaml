@@ -24,7 +24,7 @@ requirements:
   build:
     - if: build_platform != host_platform
       then:
-        - python
+        - python ${{ python_min }}.*
         - cross-python_${{ host_platform }}
     - ${{ stdlib("c") }}
     - ${{ compiler("rust") }}
