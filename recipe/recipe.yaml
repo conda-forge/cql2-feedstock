@@ -26,6 +26,8 @@ requirements:
       then:
         - python ${{ python_min }}.*
         - cross-python_${{ host_platform }}
+        - crossenv
+        - maturin >=1.7,<2.0
     - ${{ stdlib("c") }}
     - ${{ compiler("rust") }}
     - cargo-bundle-licenses
