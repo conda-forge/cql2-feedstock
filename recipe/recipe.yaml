@@ -1,6 +1,6 @@
 context:
   name: cql2
-  version: "0.5.7"
+  version: "0.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cql2-${{ version }}.tar.gz
-  sha256: 799aa7ac0220dc4d047d62a9cecc979177004a1d6d598a8e5030d8f2fad685da
+  sha256: b6512cabdc9eeae75fff8473ccc58252cb2c5847b539a8f7d2af57134117e877
 
 build:
   number: 0
